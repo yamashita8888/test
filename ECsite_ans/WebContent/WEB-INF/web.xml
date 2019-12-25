@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>ECsite_ans</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>web.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Serch</servlet-name>
+		<servlet-class>web.SerchServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Serch</servlet-name>
+		<url-pattern>/Serch</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Back</servlet-name>
+		<servlet-class>web.BackServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Back</servlet-name>
+		<url-pattern>/Back</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Syosai</servlet-name>
+		<servlet-class>web.SyosaiServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Syosai</servlet-name>
+		<url-pattern>/Syosai</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Cart</servlet-name>
+		<servlet-class>web.CartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Cart</servlet-name>
+		<url-pattern>/Cart</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Kakunin</servlet-name>
+		<servlet-class>web.KakuninServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Kakunin</servlet-name>
+		<url-pattern>/Kakunin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>logout</servlet-name>
+		<servlet-class>web.logoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+
+
+
+
+</web-app>
